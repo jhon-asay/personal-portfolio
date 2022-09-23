@@ -460,7 +460,16 @@
 
       <section class="contact" id="section--contact">
         <div class="contact__container">
-          <form class="form" action="submit" netlify>
+          <form
+            class="form"
+            method="post"
+            name="contact"
+            onSubmit="submit"
+            data-netlify="true"
+            data-netlify-honeypot="spam-filter"
+            netlify
+          >
+            <input class="spam-filter" name="spam-filter" />
             <div class="form__group">
               <input
                 class="form__input"
@@ -468,6 +477,7 @@
                 type="text"
                 placeholder="Full name"
                 id="name"
+                name="name"
                 required
               />
               <label class="form__label form__label-std" for="name"
@@ -482,6 +492,7 @@
                 type="email"
                 placeholder="Email"
                 id="email"
+                name="email"
                 required
               />
               <label class="form__label form__label-std" for="email"
@@ -495,6 +506,7 @@
                 type="text"
                 placeholder="Message"
                 id="message"
+                name="message"
                 rows="5"
                 required
               ></textarea>
