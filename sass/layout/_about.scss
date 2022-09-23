@@ -1,0 +1,49 @@
+.about {
+  grid-column: content-start / content-end;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  padding: 6rem;
+
+  &__quote {
+    display: block;
+    margin-bottom: 5rem;
+    color: var(--color-grey-light-1);
+  }
+
+  &__paragraph {
+    font-size: 1.8rem;
+    color: var(--color-grey-light-1);
+    max-width: 60%;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    list-style: none;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: var(--color-grey-dark-2);
+  }
+
+  &__btn-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    align-items: flex-end;
+    fill: var(--color-grey-light-1);
+  }
+}

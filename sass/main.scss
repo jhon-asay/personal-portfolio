@@ -1,0 +1,24 @@
+@forward 'abstracts/functions';
+@forward 'abstracts/mixins';
+@forward 'abstracts/variables';
+
+@forward 'base/animations';
+@forward 'base/base';
+@forward 'base/typography';
+@forward 'base/utilities';
+
+@forward 'components/button';
+@forward 'components/card';
+@forward 'components/form';
+@forward 'components/side-nav';
+@forward 'components/slider';
+
+@forward 'layout/about';
+@forward 'layout/contact';
+@forward 'layout/footer';
+@forward 'layout/header';
+@forward 'layout/projects';
+@forward 'layout/sidebar';
+@forward 'layout/skill';
+
+@forward 'pages/home';

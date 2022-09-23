@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
+
+    <title>Jhon Asay</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav class="side-nav">
+          <ul class="side-nav__list">
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#section--about">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-drivers-license-o"></use>
+                </svg>
+                <span>About Me</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#section--skills"
+                ><svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-code"></use>
+                </svg>
+                <span>Skills</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a class="side-nav__link" href="#section--projects"
+                ><svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-windows"></use>
+                </svg>
+                <span>Projects</span></a
+              >
+            </li>
+            <li class="side-nav__item">
+              <a
+                class="side-nav__link side-nav__link--btn"
+                href="#section--contact"
+                ><svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
+                </svg>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+          <h2 class="side-nav__logo">JA</h2>
+        </nav>
+      </div>
+
+      <header class="header">
+        <div class="header__text-box">
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            Hello, my name is
+          </h2>
+          <h1 class="heading-primary u-margin-bottom-medium">
+            <span class="heading-primary--main u-margin-bottom-small"
+              >jhon Asay.</span
+            >
+            <span class="heading-primary--sub">Front-end developer.</span>
+          </h1>
+
+          <!-- TODO: Make button show modal with VanillaJS -->
+          <a
+            href="#section--projects"
+            class="btn btn--orange btn--animated btn--show-modal"
+          >
+            Projects &nbsp; &rarr;
+          </a>
+        </div>
+      </header>
+
+      <section class="about" id="section--about">
+        <div class="about__text-box u-margin-bottom-big">
+          <h2
+            class="heading-secondary heading-secondary--white u-margin-bottom-small"
+          >
+            About Me
+          </h2>
+
+          <span class="about__quote">
+            "Failure is not the opposite of success, it is part of success."
+          </span>
+
+          <p class="about__paragraph">
+            I am a front-end web developer located in the United States. I build
+            responsive websites with a focus on scalability, user experience and
+            accesability. I build apps that solve problems and make the user's
+            life convenient. My goal is to work on front-end solution apps that
+            will improve a user's quality of life. Please take a look at my
+            projects to see if I would be a good fit for your company.
+          </p>
+        </div>
+
+        <ul class="about__links">
+          <li class="about__item">
+            <a
+              class="about__link"
+              target="_blank"
+              href="https://github.com/jhon-asay"
+              ><ion-icon class="about__icon" name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="about__item">
+            <a
+              class="about__link"
+              target="_blank"
+              href="https://www.linkedin.com/in/jhon-asay/"
+              ><ion-icon class="about__icon" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <button class="btn btn--black d-flex">
+            Resume
+            <svg class="about__btn-icon">
+              <use xlink:href="img/sprite.svg#icon-download"></use>
+            </svg>
+          </button>
+        </ul>
+      </section>
+
+      <section class="skills" id="section--skills">
+        <div class="skills__container">
+          <h2 class="heading-secondary u-center-text u-margin-bottom-medium">
+            Skills
+          </h2>
+
+          <div class="skills__grid">
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-html5"></use>
+              </svg>
+              <span class="skills__card-text">HTML</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-css3"></use>
+              </svg>
+              <span class="skills__card-text">CSS</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-javascript"></use>
+              </svg>
+              <span class="skills__card-text">JavaScript</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-react"></use>
+              </svg>
+              <span class="skills__card-text">React</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-redux"></use>
+              </svg>
+              <span class="skills__card-text">Redux</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-sass"></use>
+              </svg>
+              <span class="skills__card-text">Sass</span>
+            </div>
+          </div>
+
+          <h2 class="heading-secondary u-center-text u-margin-bottom-medium">
+            Tools
+          </h2>
+
+          <div class="skills__grid">
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-git"></use>
+              </svg>
+              <span class="skills__card-text">Git</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+              <span class="skills__card-text">Github</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-visualstudiocode"></use>
+              </svg>
+              <span class="skills__card-text">VSCode</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-firebase"></use>
+              </svg>
+              <span class="skills__card-text">Firebase</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+              </svg>
+              <span class="skills__card-text">Bootstrap</span>
+            </div>
+
+            <div class="skills__card">
+              <svg class="skills__card-icon">
+                <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+              </svg>
+              <span class="skills__card-text">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="section--projects">
+        <div class="project__container">
+          <h2 class="heading-secondary u-center-text u-margin-bottom-medium">
+            Projects
+          </h2>
+
+          <div class="project__card">
+            <div class="project__content">
+              <h3 class="heading-tertiary u-margin-bottom-small u-center-text">
+                Crwn Clothing
+              </h3>
+
+              <blockquote class="project__description">
+                <p class="u-margin-bottom-small">
+                  E-commerce site with shopping cart and payment functionality.
+                  Using firebase for login and product data.
+                </p>
+                <ul>
+                  <li>Navigate through the store</li>
+                  <li>Add items to the cart</li>
+                  <li>Edits your items in checkout</li>
+                  <li>Signin with demo account: mike@gmail.com / 12341234</li>
+                </ul>
+              </blockquote>
+
+              <div class="project__tech-stack">
+                <span class="project__tech">React</span>
+                <span class="project__tech">Firebase</span>
+              </div>
+
+              <div class="project__links">
+                <a
+                  class="project__link project__link--btn"
+                  target="_blank"
+                  href="https://github.com/jhon-asay/crwn-clothing"
+                  >Github
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+                <a
+                  class="project__link project__link--btn"
+                  target="_blank"
+                  href="https://ja-crwn-clothing-project.netlify.app/"
+                  >Site
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-external-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__images">
+              <div class="slider">
+                <div class="slider__slide">
+                  <img
+                    src="img/crwn-clothing-home.jpg"
+                    alt="Crown Clothing home screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/crwn-clothing-shop.jpg"
+                    alt="Crown Clothing shop screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/crwn-clothing-checkout.jpg"
+                    alt="Crown Clothing checkout screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/crwn-clothing-signin.jpg"
+                    alt="Crown Clothing signin/signup screen"
+                  />
+                </div>
+
+                <button>
+                  <svg class="slider__btn slider__btn--left">
+                    <use xlink:href="img/sprite.svg#icon-circle-left"></use>
+                  </svg>
+                </button>
+                <button>
+                  <svg class="slider__btn slider__btn--right">
+                    <use xlink:href="img/sprite.svg#icon-circle-right"></use>
+                  </svg>
+                </button>
+                <div class="slider__dots"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__content">
+              <h3 class="heading-tertiary u-margin-bottom-small u-center-text">
+                Penny Saver
+              </h3>
+              <blockquote class="project__description">
+                <p class="u-margin-bottom-small">
+                  Budget app made with React, Bootstrap, and local storage.
+                </p>
+                <ul>
+                  <li>Create a new budget</li>
+                  <li>
+                    Progress bar changes when going over 50% and 75% budget
+                  </li>
+                  <li>Card turns red when over budget</li>
+                  <li>Delete expenses or budget from View Expenses</li>
+                </ul>
+              </blockquote>
+              <div class="project__tech-stack">
+                <span class="project__tech">React</span>
+                <span class="project__tech">Boostrap</span>
+              </div>
+              <div class="project__links">
+                <a
+                  class="project__link project__link--btn"
+                  target="_blank"
+                  href="https://github.com/jhon-asay/penny-saver"
+                  >Github
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+                <a
+                  class="project__link project__link--btn"
+                  target="_blank"
+                  href="https://ja-penny-saver-app.netlify.app/"
+                  >Site
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-external-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__images">
+              <div class="slider">
+                <div class="slider__slide">
+                  <img
+                    src="img/penny-saver-new-budget.jpg"
+                    alt="Penny Saver new budget screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/penny-saver-new-expense-2.jpg"
+                    alt="Penny Saver new expense screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/penny-saver-view-expense.jpg"
+                    alt="Penny Saver view expense screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/penny-saver-over-50.jpg"
+                    alt="Penny Saver over 50% budget screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/penny-saver-over-75.jpg"
+                    alt="Penny Saver over 75% budget screen"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/penny-saver-over-budget.jpg"
+                    alt="Penny Saver over budget screen"
+                  />
+                </div>
+
+                <button>
+                  <svg class="slider__btn slider__btn--left">
+                    <use xlink:href="img/sprite.svg#icon-circle-left"></use>
+                  </svg>
+                </button>
+                <button>
+                  <svg class="slider__btn slider__btn--right">
+                    <use xlink:href="img/sprite.svg#icon-circle-right"></use>
+                  </svg>
+                </button>
+                <div class="slider__dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="section--contact">
+        <div class="contact__container">
+          <form class="form" action="submit" netlify>
+            <div class="form__group">
+              <input
+                class="form__input"
+                pattern="[A-Za-z ]{4,}"
+                type="text"
+                placeholder="Full name"
+                id="name"
+                required
+              />
+              <label class="form__label form__label-std" for="name"
+                >Full name</label
+              >
+            </div>
+
+            <div class="form__group">
+              <input
+                class="form__input"
+                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[A-Za-z]{2,6}"
+                type="email"
+                placeholder="Email"
+                id="email"
+                required
+              />
+              <label class="form__label form__label-std" for="email"
+                >Email</label
+              >
+            </div>
+
+            <div class="form__group">
+              <textarea
+                class="form__input"
+                type="text"
+                placeholder="Message"
+                id="message"
+                rows="5"
+                required
+              ></textarea>
+              <label class="form__label form__textarea" for="message"
+                >Message</label
+              >
+            </div>
+
+            <div class="form__group">
+              <button class="btn btn--orange contact__btn">
+                Send
+                <svg class="form__icon">
+                  <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div class="contact__content">
+            <h2
+              class="heading-secondary heading-secondary--white u-center-text u-margin-bottom-medium"
+            >
+              Interested in working with me?
+            </h2>
+            <span class="contact__text">
+              I am currently looking for opportunities to further my career in
+              web development
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h2 class="footer__logo">JA</h2>
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              target="_blank"
+              href="https://github.com/jhon-asay"
+              ><ion-icon class="footer__icon" name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              target="_blank"
+              href="https://www.linkedin.com/in/jhon-asay/"
+              ><ion-icon class="footer__icon" name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </footer>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">Contact me through email</h2>
+        <form action="" class="modal__form">
+          <div>
+            <input type="text" name="name" id="name" required />
+            <label for="name">Name</label>
+          </div>
+          <div>
+            <input type="email" name="email" id="email" required />
+            <label for="email">Email Address</label>
+          </div>
+          <div>
+            <input type="text" name="subject" id="subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div>
+            <textarea name="message" id="message" rows="5" required></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

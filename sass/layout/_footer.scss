@@ -1,0 +1,33 @@
+.footer {
+  grid-column: content-start / content-end;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--color-grey-dark-2);
+  padding: 6rem;
+
+  &__logo {
+    font-size: 10rem;
+    color: var(--color-grey-light-1);
+    margin-bottom: 8rem;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: var(--color-grey-light-1);
+  }
+}

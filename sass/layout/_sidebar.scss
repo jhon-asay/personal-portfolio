@@ -1,0 +1,7 @@
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+
+  background-color: var(--color-grey-dark-1);
+  position: relative;
+}

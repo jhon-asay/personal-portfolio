@@ -1,0 +1,28 @@
+.skills__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-white);
+  padding: 3rem;
+  height: 15rem;
+  width: 13rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 3rem 1rem var(--shadow-large);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.1);
+  }
+
+  &-icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &-text {
+    font-size: 1.6rem;
+  }
+}

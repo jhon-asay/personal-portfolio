@@ -1,0 +1,19 @@
+@use '../abstracts/mixins';
+
+.header {
+  grid-column: content-start / content-end;
+  position: relative;
+  max-width: 100%;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(256, 256, 256, 0.85),
+      rgba(250, 250, 250, 0.85)
+    ),
+    url(../../img/hero.jpg);
+  background-size: cover;
+
+  &__text-box {
+    @include mixins.centerEl;
+  }
+}

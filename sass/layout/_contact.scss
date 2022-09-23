@@ -1,0 +1,33 @@
+.contact {
+  grid-column: content-start / content-end;
+  padding: 6rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(35rem, 1.25fr) minmax(30rem, 1fr);
+    background-color: var(--color-white);
+    border-radius: 5px;
+    max-width: 90rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem var(--shadow-dark);
+    margin-inline: auto;
+  }
+
+  &__content {
+    background-color: var(--color-grey-dark-2);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 0 auto;
+  }
+
+  &__text {
+    color: var(--color-grey-light-1);
+  }
+}
