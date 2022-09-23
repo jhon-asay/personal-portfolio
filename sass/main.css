@@ -199,9 +199,8 @@ body {
   display: none;
 }
 
-.d-flex {
-  display: flex;
-  align-items: center;
+.spam-filter {
+  display: none;
 }
 
 .btn {
