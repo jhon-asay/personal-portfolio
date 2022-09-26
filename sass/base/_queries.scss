@@ -1,0 +1,11 @@
+/// Below 1248 pixels ///
+
+@media (max-width: 78em) {
+  .header__text-box {
+    width: 60rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

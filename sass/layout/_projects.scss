@@ -5,14 +5,15 @@
   padding: 6rem;
 
   &__container {
-    // width: 85rem;
     margin-inline: auto;
+    max-width: 95rem;
   }
 
   &__card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 43rem;
+
     box-shadow: 0 1rem 3rem var(--shadow-light);
 
     &:not(:last-child) {
@@ -38,6 +39,24 @@
     padding-bottom: 1.5rem;
   }
 
+  &__bullets {
+    list-style: none;
+  }
+
+  &__bullet {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__bullet-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-white);
+    margin-left: -0.5rem;
+  }
+
   &__tech-stack {
     text-align: center;
     padding: 1.5rem 0;
@@ -53,7 +72,7 @@
     border-radius: 5rem;
 
     &:not(:last-child) {
-      margin-right: 0.5rem;
+      margin-right: 1rem;
     }
   }
 

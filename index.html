@@ -19,6 +19,15 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="sass/main.css" />
 
     <title>Jhon Asay</title>
@@ -82,7 +91,12 @@
               </a>
             </li>
           </ul>
-          <h2 class="side-nav__logo">JA</h2>
+          <a href="#" class="side-nav__logo"
+            ><img
+              class="side-nav__logo"
+              src="img/logo-png.png"
+              alt="Jhon Asay's logo"
+          /></a>
         </nav>
       </div>
 
@@ -103,7 +117,7 @@
             href="#section--projects"
             class="btn btn--orange btn--animated btn--show-modal"
           >
-            Projects &nbsp; &rarr;
+            Projects &nbsp; &nbsp; &rarr;
           </a>
         </div>
       </header>
@@ -120,14 +134,79 @@
             "Failure is not the opposite of success, it is part of success."
           </span>
 
-          <p class="about__paragraph">
+          <p class="about__paragraph u-margin-bottom-small">
             I am a front-end web developer located in the United States. I build
-            responsive websites with a focus on scalability, user experience and
-            accesability. I build apps that solve problems and make the user's
-            life convenient. My goal is to work on front-end solution apps that
-            will improve a user's quality of life. Please take a look at my
-            projects to see if I would be a good fit for your company.
+            websites that turn visitors into engaged customers. A good website
+            does the job of a top-performing marketing and sales representative
+            24 hours a day. My goal is to work on front-end solutions that
+            improve a user's quality of life.
           </p>
+
+          <div class="faq">
+            <h2 class="u-margin-bottom-small">Why Me</h2>
+            <div class="faq__row">
+              <div class="faq__question">
+                <span>Forever Learner</span>
+              </div>
+              <div class="faq__answer">
+                <span
+                  >I keep up with the latest technologies and updates, which
+                  helps me make better sites and apps.
+                </span>
+              </div>
+            </div>
+
+            <div class="faq__row">
+              <div class="faq__question">
+                <span>Problem Solver</span>
+              </div>
+              <div class="faq__answer">
+                <span
+                  >I break down problems into a flowchart and look for the best
+                  technology or method to solve each inquiry.
+                </span>
+              </div>
+            </div>
+
+            <div class="faq__row">
+              <div class="faq__question">
+                <span>Best Practice</span>
+              </div>
+              <div class="faq__answer">
+                <span
+                  >I focus on maintenance and scalability in all my projects by
+                  using helper functions, theme variables, and single purpose
+                  components.
+                </span>
+              </div>
+            </div>
+
+            <div class="faq__row">
+              <div class="faq__question">
+                <span>Work Environment</span>
+              </div>
+              <div class="faq__answer">
+                <span
+                  >I enjoy working in teams but I also self manage. Combining my
+                  previous work experience with a new skill set.
+                </span>
+              </div>
+            </div>
+
+            <div class="faq__row">
+              <div class="faq__question">
+                <span>Attitude</span>
+              </div>
+              <div class="faq__answer">
+                <span
+                  >I do have impostor syndrome like many developers, but I am
+                  incredibly proud of all my projects and achivements. I
+                  definitely see progress in my skills and I look forward to
+                  learning more from my work as well as my peers.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <ul class="about__links">
@@ -241,9 +320,9 @@
 
             <div class="skills__card">
               <svg class="skills__card-icon">
-                <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+                <use xlink:href="img/sprite.svg#icon-netlify"></use>
               </svg>
-              <span class="skills__card-text">Bootstrap</span>
+              <span class="skills__card-text">Netlify</span>
             </div>
 
             <div class="skills__card">
@@ -273,11 +352,39 @@
                   E-commerce site with shopping cart and payment functionality.
                   Using firebase for login and product data.
                 </p>
-                <ul>
-                  <li>Navigate through the store</li>
-                  <li>Add items to the cart</li>
-                  <li>Edits your items in checkout</li>
-                  <li>Signin with demo account: mike@gmail.com / 12341234</li>
+                <ul class="project__bullets">
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Navigate through the store</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Add items to the cart</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Edit your items in checkout</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Login with demo account:</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-right hidden"
+                      ></use>
+                    </svg>
+                    <span>mike@gmail.com / 12341234</span>
+                  </li>
                 </ul>
               </blockquote>
 
@@ -291,7 +398,8 @@
                   class="project__link project__link--btn"
                   target="_blank"
                   href="https://github.com/jhon-asay/crwn-clothing"
-                  >Github
+                >
+                  <span>Github</span>
                   <svg class="project__icon">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
                   </svg>
@@ -300,7 +408,7 @@
                   class="project__link project__link--btn"
                   target="_blank"
                   href="https://ja-crwn-clothing-project.netlify.app/"
-                  >Site
+                  ><span>Site</span>
                   <svg class="project__icon">
                     <use xlink:href="img/sprite.svg#icon-external-link"></use>
                   </svg>
@@ -362,13 +470,31 @@
                 <p class="u-margin-bottom-small">
                   Budget app made with React, Bootstrap, and local storage.
                 </p>
-                <ul>
-                  <li>Create a new budget</li>
-                  <li>
-                    Progress bar changes when going over 50% and 75% budget
+                <ul class="project__bullets">
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Create a new budget</span>
                   </li>
-                  <li>Card turns red when over budget</li>
-                  <li>Delete expenses or budget from View Expenses</li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Bar changes at 50% and 75%</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Card turns red when over budget</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Delete expenses or budgets</span>
+                  </li>
                 </ul>
               </blockquote>
               <div class="project__tech-stack">
@@ -380,7 +506,7 @@
                   class="project__link project__link--btn"
                   target="_blank"
                   href="https://github.com/jhon-asay/penny-saver"
-                  >Github
+                  ><span>Github</span>
                   <svg class="project__icon">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
                   </svg>
@@ -389,7 +515,7 @@
                   class="project__link project__link--btn"
                   target="_blank"
                   href="https://ja-penny-saver-app.netlify.app/"
-                  >Site
+                  ><span>Site</span>
                   <svg class="project__icon">
                     <use xlink:href="img/sprite.svg#icon-external-link"></use>
                   </svg>
@@ -516,8 +642,8 @@
             </div>
 
             <div class="form__group">
-              <button class="btn btn--orange contact__btn">
-                Send
+              <button class="btn btn--orange d-flex">
+                <span>Send</span>
                 <svg class="form__icon">
                   <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
                 </svg>
@@ -540,7 +666,12 @@
       </section>
 
       <footer class="footer">
-        <h2 class="footer__logo">JA</h2>
+        <a href="#" class="footer__logo"
+          ><img
+            class="footer__logo"
+            src="img/logo-png.png"
+            alt="Jhon Asay's logo"
+        /></a>
         <ul class="footer__nav">
           <li class="footer__item">
             <a

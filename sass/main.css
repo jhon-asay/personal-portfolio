@@ -108,6 +108,14 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 78em) {
+  .header__text-box {
+    width: 60rem;
+  }
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -203,6 +211,11 @@ body {
   display: none;
 }
 
+.d-flex {
+  display: flex !important;
+  align-items: center;
+}
+
 .btn {
   /* Button click animation alternative */
   /* &:hover {
@@ -220,7 +233,6 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 50px;
   transition: all 0.2s;
   position: relative;
   font-size: var(--font-large);
@@ -232,7 +244,7 @@ body {
   box-shadow: 0 0.5rem 0.5rem var(--shadow-medium);
 }
 .btn:hover::after {
-  transform: scaleX(1.3) scaleY(1.6);
+  transform: scaleX(1.2) scaleY(1.4);
   opacity: 0;
 }
 .btn:active, .btn:focus {
@@ -244,7 +256,6 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
   position: absolute;
   top: 0;
   left: 0;
@@ -399,6 +410,7 @@ body {
 }
 .side-nav__list {
   grid-row: list-start/list-end;
+  margin-bottom: 2rem;
 }
 .side-nav__item {
   position: relative;
@@ -444,9 +456,8 @@ body {
 }
 .side-nav__logo {
   grid-row: logo-start/logo-end;
-  font-size: 10rem;
-  color: var(--color-primary);
-  text-align: center;
+  width: 15rem;
+  justify-self: center;
 }
 
 .slider {
@@ -533,7 +544,9 @@ body {
 .about__quote {
   display: block;
   margin-bottom: 5rem;
-  color: var(--color-grey-light-1);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-grey-light-3);
 }
 .about__paragraph {
   font-size: 1.8rem;
@@ -562,6 +575,25 @@ body {
   margin-left: 1rem;
   align-items: flex-end;
   fill: var(--color-grey-light-1);
+}
+
+.faq {
+  max-width: 80rem;
+}
+.faq__row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.faq__row:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.faq__question {
+  text-transform: uppercase;
+}
+.faq__answer {
+  font-weight: 700;
+  letter-spacing: -0.1rem;
 }
 
 .contact {
@@ -600,11 +632,9 @@ body {
   padding: 6rem;
 }
 .footer__logo {
-  font-size: 10rem;
-  color: var(--color-grey-light-1);
-  margin-bottom: 8rem;
-  line-height: 1;
-  text-align: center;
+  width: 30rem;
+  margin: -2rem 0;
+  justify-self: center;
 }
 .footer__nav {
   display: flex;
@@ -616,7 +646,7 @@ body {
 .footer__icon {
   height: 5rem;
   width: 5rem;
-  fill: var(--color-grey-light-1);
+  fill: var(--color-primary);
 }
 
 .header {
@@ -640,6 +670,7 @@ body {
 }
 .project__container {
   margin-inline: auto;
+  max-width: 95rem;
 }
 .project__card {
   display: grid;
@@ -665,6 +696,21 @@ body {
   margin-bottom: auto;
   padding-bottom: 1.5rem;
 }
+.project__bullets {
+  list-style: none;
+}
+.project__bullet {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.project__bullet-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-white);
+  margin-left: -0.5rem;
+}
 .project__tech-stack {
   text-align: center;
   padding: 1.5rem 0;
@@ -679,7 +725,7 @@ body {
   border-radius: 5rem;
 }
 .project__tech:not(:last-child) {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 .project__links {
   display: flex;
@@ -721,12 +767,12 @@ body {
   padding: 6rem;
 }
 .skills__container {
-  max-width: 100rem;
+  max-width: 95rem;
   margin-inline: auto;
 }
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   justify-items: center;
   gap: 3rem;
 }
@@ -739,5 +785,4 @@ body {
   grid-template-rows: 100vh repeat(5, -webkit-min-content);
   grid-template-rows: 100vh repeat(5, min-content);
   grid-template-columns: [sidebar-start] 20rem [sidebar-end content-start] 1fr [content-end];
-  scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */

@@ -9,11 +9,9 @@
   padding: 6rem;
 
   &__logo {
-    font-size: 10rem;
-    color: var(--color-grey-light-1);
-    margin-bottom: 8rem;
-    line-height: 1;
-    text-align: center;
+    width: 30rem;
+    margin: -2rem 0;
+    justify-self: center;
   }
 
   &__nav {
@@ -28,6 +26,6 @@
   &__icon {
     height: 5rem;
     width: 5rem;
-    fill: var(--color-grey-light-1);
+    fill: var(--color-primary);
   }
 }

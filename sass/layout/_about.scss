@@ -10,7 +10,9 @@
   &__quote {
     display: block;
     margin-bottom: 5rem;
-    color: var(--color-grey-light-1);
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-grey-light-3);
   }
 
   &__paragraph {
@@ -45,5 +47,29 @@
     margin-left: 1rem;
     align-items: flex-end;
     fill: var(--color-grey-light-1);
+  }
+}
+
+.faq {
+  max-width: 80rem;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__question {
+    text-transform: uppercase;
+  }
+
+  &__answer {
+    // font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.1rem;
   }
 }

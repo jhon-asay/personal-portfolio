@@ -9,6 +9,7 @@
 
   &__list {
     grid-row: list-start / list-end;
+    margin-bottom: 2rem;
   }
 
   &__item {
@@ -67,10 +68,8 @@
   }
 
   &__logo {
-    grid-row: logo-start / logo-end;
-
-    font-size: 10rem;
-    color: var(--color-primary);
-    text-align: center;
+    grid-row: logo-start/logo-end;
+    width: 15rem;
+    justify-self: center;
   }
 }

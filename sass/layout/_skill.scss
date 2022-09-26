@@ -6,13 +6,13 @@
   padding: 6rem;
 
   &__container {
-    max-width: 100rem;
+    max-width: 95rem;
     margin-inline: auto;
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     gap: 3rem;
 
