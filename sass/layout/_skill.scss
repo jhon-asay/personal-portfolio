@@ -2,15 +2,15 @@
   grid-column: content-start / content-end;
 
   background-color: var(--color-grey-dark-3);
-  width: 100%;
   padding: 6rem;
 
   &__container {
-    max-width: 95rem;
     margin-inline: auto;
   }
 
   &__grid {
+    max-width: 95rem;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;

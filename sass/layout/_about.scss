@@ -1,24 +1,24 @@
 .about {
   grid-column: content-start / content-end;
-  background-image: linear-gradient(
-    to right bottom,
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
+  background-color: var(--color-grey-light-2);
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   var(--color-primary-light),
+  //   var(--color-primary-dark)
+  // );
   padding: 6rem;
 
   &__quote {
     display: block;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     font-style: italic;
     font-weight: 600;
-    color: var(--color-grey-light-3);
   }
 
   &__paragraph {
     font-size: 1.8rem;
-    color: var(--color-grey-light-1);
-    max-width: 60%;
+    color: var(--color-grey-dark-2);
+    max-width: 50%;
   }
 
   &__links {
@@ -51,25 +51,31 @@
 }
 
 .faq {
-  max-width: 80rem;
-
   &__row {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
 
     &:not(:last-child) {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1rem;
+    fill: var(--color-primary-dark);
   }
 
   &__question {
     text-transform: uppercase;
+
+    & span {
+      color: var(--color-grey-dark-2);
+    }
   }
 
-  &__answer {
-    // font-family: 'Lexend', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.1rem;
-  }
+  // &__answer {
+  // }
 }

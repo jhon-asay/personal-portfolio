@@ -3,7 +3,6 @@
 .header {
   grid-column: content-start / content-end;
   position: relative;
-  max-width: 100%;
 
   background-image: linear-gradient(
       to right bottom,
@@ -13,7 +12,8 @@
     url(../../img/hero.jpg);
   background-size: cover;
 
-  &__text-box {
+  &__container {
+    min-width: 90rem;
     @include mixins.centerEl;
   }
 }

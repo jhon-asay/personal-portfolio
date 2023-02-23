@@ -3,31 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link rel="icon" href="/favicon_io/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="sass/main.css" />
 
     <title>Jhon Asay</title>
@@ -101,16 +95,15 @@
       </div>
 
       <header class="header">
-        <div class="header__text-box">
-          <h2 class="heading-secondary u-margin-bottom-medium">
-            Hello, my name is
-          </h2>
-          <h1 class="heading-primary u-margin-bottom-medium">
-            <span class="heading-primary--main u-margin-bottom-small"
-              >jhon Asay.</span
-            >
-            <span class="heading-primary--sub">Front-end developer.</span>
+        <div class="header__container">
+          <!-- <span class="header-title">Hello, my name is</span> -->
+          <h1 class="heading-primary heading-primary--main">
+            <span class="u-letter-spacing">Jhon </span><span>Asa</span
+            ><span class="u-letter-spacing-y">y</span>
           </h1>
+          <span class="heading-primary--sub u-margin-bottom-medium"
+            >Front-end Developer</span
+          >
 
           <!-- TODO: Make button show modal with VanillaJS -->
           <a
@@ -125,7 +118,7 @@
       <section class="about" id="section--about">
         <div class="about__text-box u-margin-bottom-big">
           <h2
-            class="heading-secondary heading-secondary--white u-margin-bottom-small"
+            class="heading-secondary heading-secondary--black u-margin-bottom-medium"
           >
             About Me
           </h2>
@@ -135,104 +128,160 @@
           </span>
 
           <p class="about__paragraph u-margin-bottom-small">
-            I am a front-end web developer located in the United States. I build
-            websites that turn visitors into engaged customers. A good website
-            does the job of a top-performing marketing and sales representative
-            24 hours a day. My goal is to work on front-end solutions that
-            improve a user's quality of life.
+            I am a front-end web developer based in the United States with a
+            passion for creating engaging and user-friendly websites. With a
+            strong foundation in HTML, CSS, and JavaScript, I specialize in
+            crafting responsive and visually appealing designs that captivate
+            users and enhance their online experience.
           </p>
 
+          <p class="about__paragraph u-margin-bottom-small">
+            In addition to my technical skills, I am an excellent communicator
+            and team player who thrives in collaborative environments. I am
+            constantly learning and staying up-to-date with the latest trends
+            and technologies in the industry, and I am excited to bring my
+            expertise to your organization.
+          </p>
+
+          <p class="about__paragraph u-margin-bottom-big">
+            I am confident that my skills and experience make me an ideal
+            candidate for your web developer position. Let's connect to discuss
+            how I can contribute to your team and help you achieve your business
+            goals.
+          </p>
+
+          <ul class="about__links u-margin-bottom-big">
+            <li class="about__item">
+              <a
+                class="about__link"
+                target="_blank"
+                href="https://github.com/jhon-asay"
+                ><ion-icon class="about__icon" name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="about__item">
+              <a
+                class="about__link"
+                target="_blank"
+                href="https://www.linkedin.com/in/jhon-asay/"
+                ><ion-icon class="about__icon" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <button class="btn btn--black d-flex">
+              Resume
+              <svg class="about__btn-icon">
+                <use xlink:href="img/sprite.svg#icon-download"></use>
+              </svg>
+            </button>
+          </ul>
+
           <div class="faq">
-            <h2 class="u-margin-bottom-small">Why Me</h2>
+            <h2
+              class="heading-secondary heading-secondary--black u-margin-bottom-medium"
+            >
+              Qualifications
+            </h2>
             <div class="faq__row">
-              <div class="faq__question">
-                <span>Forever Learner</span>
+              <div class="faq__container">
+                <ion-icon class="faq__icon" name="bar-chart-sharp"></ion-icon>
+                <div class="faq__question">
+                  <span class="heading-tertiary">Active Learner</span>
+                </div>
+                <div class="faq__answer">
+                  <span
+                    >As a proactive learner, I stay up-to-date with industry
+                    trends and best practices by seeking out the latest
+                    technologies and frameworks. Through ongoing education, I
+                    continuously expand my knowledge and skills to anticipate
+                    clients' evolving needs and deliver high-quality products.
+                  </span>
+                </div>
               </div>
-              <div class="faq__answer">
-                <span
-                  >I keep up with the latest technologies and updates, which
-                  helps me make better sites and apps.
-                </span>
-              </div>
-            </div>
 
-            <div class="faq__row">
-              <div class="faq__question">
-                <span>Problem Solver</span>
+              <div class="faq__container">
+                <ion-icon
+                  class="faq__icon"
+                  name="extension-puzzle-sharp"
+                ></ion-icon>
+                <div class="faq__question">
+                  <span class="heading-tertiary">Problem Solver</span>
+                </div>
+                <div class="faq__answer">
+                  <span
+                    >My problem-solving approach involves breaking down complex
+                    issues into manageable steps, visualizing the problem, and
+                    evaluating the best method to tackle each inquiry. This
+                    leads to effective and creative solutions that meet project
+                    and client needs.
+                  </span>
+                </div>
               </div>
-              <div class="faq__answer">
-                <span
-                  >I break down problems into a flowchart and look for the best
-                  technology or method to solve each inquiry.
-                </span>
-              </div>
-            </div>
 
-            <div class="faq__row">
-              <div class="faq__question">
-                <span>Best Practice</span>
+              <div class="faq__container">
+                <ion-icon class="faq__icon" name="ribbon-sharp"></ion-icon>
+                <div class="faq__question">
+                  <span class="heading-tertiary">Best Practice</span>
+                </div>
+                <div class="faq__answer">
+                  <span
+                    >I prioritize maintenance and scalability in my programming
+                    projects by implementing best practices, creating clean and
+                    maintainable code that meets high standards of quality and
+                    functionality.
+                  </span>
+                </div>
               </div>
-              <div class="faq__answer">
-                <span
-                  >I focus on maintenance and scalability in all my projects by
-                  using helper functions, theme variables, and single purpose
-                  components.
-                </span>
-              </div>
-            </div>
 
-            <div class="faq__row">
-              <div class="faq__question">
-                <span>Work Environment</span>
+              <div class="faq__container">
+                <ion-icon class="faq__icon" name="terminal-sharp"></ion-icon>
+                <div class="faq__question">
+                  <span class="heading-tertiary">Work Environment</span>
+                </div>
+                <div class="faq__answer">
+                  <span
+                    >I excel in both collaborative and self-managing
+                    environments and bring a diverse skill set to any project or
+                    team. I'm confident in my ability to foster positive
+                    relationships with colleagues and bring value to any
+                    workplace.
+                  </span>
+                </div>
               </div>
-              <div class="faq__answer">
-                <span
-                  >I enjoy working in teams but I also self manage. Combining my
-                  previous work experience with a new skill set.
-                </span>
-              </div>
-            </div>
 
-            <div class="faq__row">
-              <div class="faq__question">
-                <span>Attitude</span>
+              <div class="faq__container">
+                <ion-icon class="faq__icon" name="sparkles-sharp"></ion-icon>
+                <div class="faq__question">
+                  <span class="heading-tertiary">Mindset</span>
+                </div>
+                <div class="faq__answer">
+                  <span
+                    >Despite experiencing impostor syndrome, I'm proud of my
+                    achievements and remain committed to producing high-quality
+                    work and contributing to my team's success. I'm excited to
+                    continue learning and growing from my work and colleagues.
+                  </span>
+                </div>
               </div>
-              <div class="faq__answer">
-                <span
-                  >I do have impostor syndrome like many developers, but I am
-                  incredibly proud of all my projects and achivements. I
-                  definitely see progress in my skills and I look forward to
-                  learning more from my work as well as my peers.
-                </span>
+
+              <div class="faq__container">
+                <ion-icon class="faq__icon" name="toggle-sharp"></ion-icon>
+                <div class="faq__question">
+                  <span class="heading-tertiary">Adaptable</span>
+                </div>
+                <div class="faq__answer">
+                  <span
+                    >I approach learning new technologies and frameworks with
+                    enthusiasm and embrace challenges outside of my comfort
+                    zone. I strive for personal and professional growth and
+                    enjoy exploring new opportunities. Additionally, I am adept
+                    at adapting my skill set to meet the current needs of the
+                    company.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <ul class="about__links">
-          <li class="about__item">
-            <a
-              class="about__link"
-              target="_blank"
-              href="https://github.com/jhon-asay"
-              ><ion-icon class="about__icon" name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="about__item">
-            <a
-              class="about__link"
-              target="_blank"
-              href="https://www.linkedin.com/in/jhon-asay/"
-              ><ion-icon class="about__icon" name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <button class="btn btn--black d-flex">
-            Resume
-            <svg class="about__btn-icon">
-              <use xlink:href="img/sprite.svg#icon-download"></use>
-            </svg>
-          </button>
-        </ul>
       </section>
 
       <section class="skills" id="section--skills">
@@ -464,6 +513,115 @@
           <div class="project__card">
             <div class="project__content">
               <h3 class="heading-tertiary u-margin-bottom-small u-center-text">
+                Lorem Gaming
+              </h3>
+              <blockquote class="project__description">
+                <p class="u-margin-bottom-small">
+                  Enter your information and sign up for one of our amazing
+                  subscription plans.
+                </p>
+                <ul class="project__bullets">
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Choose monthly or yearly billing</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Include addons to your plan</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>See a summary of your choices</span>
+                  </li>
+                  <li class="project__bullet">
+                    <svg class="project__bullet-icon">
+                      <use xlink:href="img/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                    <span>Dual design for mobile and desktop</span>
+                  </li>
+                </ul>
+              </blockquote>
+              <div class="project__tech-stack">
+                <span class="project__tech">HTML</span>
+                <span class="project__tech">Sass</span>
+                <span class="project__tech">JavaScript</span>
+              </div>
+              <div class="project__links">
+                <a
+                  class="project__link project__link--btn"
+                  target="_blank"
+                  href="https://github.com/jhon-asay/multi-step-form"
+                  ><span>Github</span>
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+                <a
+                  class="project__link project__link--btn"
+                  target="_blank"
+                  href="https://ja-multi-step-form.netlify.app/"
+                  ><span>Site</span>
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-external-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="project__images">
+              <div class="slider">
+                <div class="slider__slide">
+                  <img
+                    src="img/multi-step-form-2.jpg"
+                    alt="Multi-Step form plan page"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/multi-step-form-2-yearly.jpg"
+                    alt="Multi-Step form yearly plan page"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/multi-step-form-3-yearly.jpg"
+                    alt="Multi-Step form yearly addon page"
+                  />
+                </div>
+
+                <div class="slider__slide">
+                  <img
+                    src="img/multi-step-form-4-yearly.jpg"
+                    alt="Multi-Step form yearly summary page"
+                  />
+                </div>
+
+                <button>
+                  <svg class="slider__btn slider__btn--left">
+                    <use xlink:href="img/sprite.svg#icon-circle-left"></use>
+                  </svg>
+                </button>
+                <button>
+                  <svg class="slider__btn slider__btn--right">
+                    <use xlink:href="img/sprite.svg#icon-circle-right"></use>
+                  </svg>
+                </button>
+                <div class="slider__dots"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__card">
+            <div class="project__content">
+              <h3 class="heading-tertiary u-margin-bottom-small u-center-text">
                 Penny Saver
               </h3>
               <blockquote class="project__description">
@@ -653,13 +811,16 @@
 
           <div class="contact__content">
             <h2
-              class="heading-secondary heading-secondary--white u-center-text u-margin-bottom-medium"
+              class="heading-tertiary heading-secondary--white u-center-text u-margin-bottom-medium"
             >
-              Interested in working with me?
+              Excited to Join Your Team
             </h2>
             <span class="contact__text">
-              I am currently looking for opportunities to further my career in
-              web development
+              I am actively seeking new opportunities to expand my skills and
+              advance my career in web development. If you're looking for a
+              dedicated and talented front-end developer, I would love to hear
+              from you. Let's connect and discuss how I can contribute to your
+              team.
             </span>
           </div>
         </div>
