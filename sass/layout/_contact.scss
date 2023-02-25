@@ -9,7 +9,7 @@
 
   &__container {
     display: grid;
-    grid-template-columns: minmax(35rem, 1.25fr) minmax(30rem, 1fr);
+    grid-template-columns: minmax(30rem, 1fr) minmax(35rem, 1.25fr);
     background-color: var(--color-white);
     border-radius: 5px;
     max-width: 90rem;

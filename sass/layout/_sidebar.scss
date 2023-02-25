@@ -4,4 +4,12 @@
 
   background-color: var(--color-grey-dark-1);
   position: relative;
+
+  &__logo {
+    display: none;
+  }
+
+  &__btn {
+    display: none;
+  }
 }

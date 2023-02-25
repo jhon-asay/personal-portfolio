@@ -26,11 +26,6 @@
       border-bottom: 3.5px solid var(--color-primary-dark);
     }
 
-    // &:hover::placeholder,
-    // &:focus::placeholder {
-    //   color: transparent;
-    // }
-
     &::-webkit-input-placeholder {
       color: transparent;
     }
@@ -43,10 +38,8 @@
     background-color: var(--color-white);
     padding: 0 0.5rem;
     display: inline-block;
-    margin-left: 1.7rem;
+    margin-left: 1.2rem;
     transition: all 0.3s;
-    // opacity: 0;
-    // visibility: hidden;
     transform-origin: 0 0;
   }
 
@@ -55,7 +48,7 @@
   }
 
   &__textarea {
-    transform: translateY(-12.6rem);
+    transform: translateY(-11rem);
   }
 
   &__input:hover ~ &__label-std,
@@ -71,7 +64,7 @@
   &__input:not(:placeholder-shown) ~ &__textarea {
     // opacity: 1;
     // visibility: visible;
-    transform: translateY(-15rem);
+    transform: translateY(-13.5rem);
   }
 
   &__icon {
@@ -79,5 +72,11 @@
     width: 2rem;
     margin-left: 1rem;
     fill: var(--color-grey-light-1);
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
