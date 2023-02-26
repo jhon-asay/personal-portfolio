@@ -1,18 +1,10 @@
 'use strict';
 
-const sidebar = document.querySelector('.sidebar');
-const sideNav = document.querySelector('.side-nav');
-
-const slideContainer = document.querySelectorAll('.slider');
-
-const formLabel = document.querySelector('.form__label');
-const formInput = document.querySelector('.form__input');
-const ctaForm = document.querySelector('.cta-form');
-const ctaFormContainer = document.querySelector('.cta-form__container');
-
 ////////////////////////////////
 ///        NAVIGATION        ///
 ////////////////////////////////
+
+const sideNav = document.querySelector('.side-nav');
 
 const burgerBtn = document.querySelector('.sidebar__burger-btn');
 const sideNavList = document.querySelector('.side-nav__list');
@@ -29,9 +21,48 @@ const openNav = () => {
 
 openNav();
 
+const mobileScroll = () => {
+  const sidebarHeight = document.querySelector('.sidebar').offsetHeight;
+
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const scrollPosition = target.offsetTop - sidebarHeight;
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: 'smooth',
+        });
+      }
+    });
+  });
+};
+
+const runOnMobile = (scrollFunction) => {
+  if (window.matchMedia('(max-width: 500px)').matches) {
+    scrollFunction();
+  } else {
+    return;
+  }
+};
+
+runOnMobile(mobileScroll);
+
+// window.addEventListener('resize', () => {
+//   if (window.matchMedia('(max-width: 500px)').matches) {
+//     runOnMobile(mobileScroll);
+//   } else {
+//     return;
+//   }
+// });
+
 ////////////////////////////////
 ///          SLIDER          ///
 ////////////////////////////////
+
+const slideContainer = document.querySelectorAll('.slider');
 
 for (let i = 0; i < slideContainer.length; i++) {
   const slider = function () {
