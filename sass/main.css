@@ -814,10 +814,12 @@ body {
     display: none;
     position: absolute;
     background-color: var(--color-grey-dark-2);
-    top: 1.25rem;
+    top: 1rem;
     left: 0;
     width: 100%;
     padding: 3rem;
+    z-index: -10;
+    opacity: 0.9;
     animation: showNav 0.5s ease-in-out forwards;
     transform-origin: top center;
   }
@@ -836,15 +838,15 @@ body {
     margin-bottom: 0;
   }
   .side-nav__item:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .side-nav__link:link, .side-nav__link:visited {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     padding: 1.5rem 3rem;
   }
   .side-nav__icon {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     fill: var(--color-grey-light-1);
     margin-right: 5rem;
   }
