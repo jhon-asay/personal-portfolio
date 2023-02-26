@@ -5,11 +5,61 @@
   background-color: var(--color-grey-dark-1);
   position: relative;
 
-  &__logo {
+  &__mobile-logo {
     display: none;
+
+    width: 7.5rem;
+    height: 7.5rem;
+    align-self: center;
   }
 
-  &__btn {
+  &__burger-btn {
     display: none;
+
+    color: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    margin: 0 1rem;
+
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__burger,
+  &__burger::before,
+  &__burger::after {
+    opacity: 1;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--color-primary);
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__burger::before,
+  &__burger::after {
+    content: '';
+    position: absolute;
+  }
+
+  &__burger::before {
+    transform: translateY(-1rem);
+  }
+
+  &__burger::after {
+    transform: translateY(1rem);
+  }
+
+  &__burger-btn {
+    &.open .sidebar__burger {
+      background-color: transparent;
+    }
+
+    &.open .sidebar__burger::before {
+      transform: rotate(45deg);
+    }
+
+    &.open .sidebar__burger::after {
+      transform: rotate(-45deg);
+    }
   }
 }

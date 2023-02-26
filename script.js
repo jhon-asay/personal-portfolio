@@ -11,12 +11,23 @@ const ctaForm = document.querySelector('.cta-form');
 const ctaFormContainer = document.querySelector('.cta-form__container');
 
 ////////////////////////////////
-///     SMOOTH SCROLLING     ///
-////////////////////////////////
-
-////////////////////////////////
 ///        NAVIGATION        ///
 ////////////////////////////////
+
+const burgerBtn = document.querySelector('.sidebar__burger-btn');
+const sideNavList = document.querySelector('.side-nav__list');
+
+const toggleButtonAndNav = () => {
+  burgerBtn.classList.toggle('open');
+  sideNav.classList.toggle('open');
+};
+
+const openNav = () => {
+  burgerBtn.addEventListener('click', toggleButtonAndNav);
+  sideNavList.addEventListener('click', toggleButtonAndNav);
+};
+
+openNav();
 
 ////////////////////////////////
 ///          SLIDER          ///

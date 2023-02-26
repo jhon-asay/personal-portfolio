@@ -15,8 +15,6 @@
   ////////////////////////////
 
   .sidebar {
-    position: static;
-
     margin-top: 0;
     position: sticky;
     top: 0;
@@ -29,91 +27,65 @@
 
     &__mobile-logo {
       display: block;
-      width: 7.5rem;
-      height: 7.5rem;
-      align-self: center;
     }
 
-    &__mobile-btn {
-      display: block;
-      background: none;
-      border: none;
-      color: var(--color-primary);
-      margin-right: 2rem;
-    }
-
-    &__mobile-nav-open .side-nav {
-      display: block;
+    &__burger-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
   .side-nav {
     list-style: none;
     display: none;
+    position: absolute;
+    background-color: var(--color-grey-dark-2);
+    top: 1.25rem;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    animation: showNav 0.5s ease-in-out forwards;
+    transform-origin: top center;
+
+    @keyframes showNav {
+      0% {
+        transform: scaleY(0);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+
+    &.open {
+      display: block;
+    }
 
     &__list {
-      order: 2;
       margin-bottom: 0;
     }
 
     &__item {
-      position: relative;
-      width: 100%;
-
       &:not(:last-child) {
-        margin-bottom: 0.5rem;
+        margin-bottom: 3rem;
       }
-    }
-
-    &__item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 10px;
-      background-color: var(--color-primary);
-      transform: scaleY(0);
-      // prettier-ignore
-      transition: transform 0.2s, 
-      width 0.2s cubic-bezier(1, 0, 0, 1) 0.2s,
-      background-color 0.1s;
-    }
-
-    &__item:hover::before,
-    &__item--active::before {
-      transform: scaleY(1);
-      width: 100%;
-    }
-
-    &__item:active::before {
-      background-color: var(--color-primary-light);
     }
 
     &__link:link,
     &__link:visited {
-      display: flex;
-      align-items: center;
-
-      color: var(--color-grey-light-1);
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      text-decoration: none;
+      font-size: 2.4rem;
       padding: 1.5rem 3rem;
-      position: relative;
-      z-index: 1;
     }
 
     &__icon {
-      height: 2rem;
-      width: 2em;
+      height: 3rem;
+      width: 3rem;
       fill: var(--color-grey-light-1);
-      margin-right: 2rem;
+      margin-right: 5rem;
     }
 
     &__logo {
-      order: 1;
-      width: 7.5rem;
+      display: none;
     }
   }
 
@@ -206,12 +178,11 @@
     &__card {
       display: flex;
       flex-direction: column;
-
       box-shadow: 0 0.5rem 2rem var(--shadow-light);
     }
 
     &__images {
-      height: 25rem;
+      height: 23rem;
       width: 100%;
     }
   }
@@ -231,6 +202,36 @@
 
   .form {
     padding: 3rem;
+  }
+
+  ////////////////////////////
+  ///    FOOTER SECTION    ///
+  ////////////////////////////
+
+  .footer {
+    padding: 3rem;
+
+    &__logo {
+      width: 20rem;
+    }
+
+    &__icon {
+      margin-top: 2rem;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  ////////////////////////////
+  ///       BUTTONS        ///
+  ////////////////////////////
+
+  .btn {
+    &,
+    &:link,
+    &:visited {
+      padding: 1.1rem 3rem;
+    }
   }
 
   ///////////////////////////
@@ -255,36 +256,6 @@
 
   .u-letter-spacing-y {
     margin-left: -1.25rem;
-  }
-}
-
-////////////////////////////
-///    FOOTER SECTION    ///
-////////////////////////////
-
-.footer {
-  padding: 3rem;
-
-  &__logo {
-    width: 20rem;
-  }
-
-  &__icon {
-    margin-top: 2rem;
-    height: 4rem;
-    width: 4rem;
-  }
-}
-
-////////////////////////////
-///       BUTTONS        ///
-////////////////////////////
-
-.btn {
-  &,
-  &:link,
-  &:visited {
-    padding: 1.1rem 3rem;
   }
 }
 
