@@ -44,7 +44,7 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        <a href="#" class="sidebar__mobile-logo"
+        <a href="#section--header" class="sidebar__mobile-logo"
           ><img
             class="sidebar__mobile-logo"
             src="img/logo-png.png"
@@ -53,48 +53,63 @@
         <div class="sidebar__burger-btn">
           <div class="sidebar__burger"></div>
         </div>
-        <nav class="side-nav">
+        <nav role="navigation" class="side-nav">
           <ul class="side-nav__list">
             <li class="side-nav__item">
-              <a class="side-nav__link" href="#section--header">
-                <svg class="side-nav__icon">
+              <a
+                aria-label="Home section"
+                class="side-nav__link"
+                href="#section--header"
+              >
+                <svg aria-hidden="true" class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg>
-                <span>Home</span>
+                Home
               </a>
             </li>
             <li class="side-nav__item">
-              <a class="side-nav__link" href="#section--about">
-                <svg class="side-nav__icon">
+              <a
+                aria-label="Learn more about Jhon"
+                class="side-nav__link"
+                href="#section--about"
+              >
+                <svg aria-hidden="true" class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-drivers-license-o"></use>
                 </svg>
-                <span>About Me</span>
+                About Me
               </a>
             </li>
             <li class="side-nav__item">
-              <a class="side-nav__link" href="#section--skills"
-                ><svg class="side-nav__icon">
+              <a
+                aria-label="See Jhon's technical skills"
+                class="side-nav__link"
+                href="#section--skills"
+                ><svg aria-hidden="true" class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-code"></use>
                 </svg>
-                <span>Skills</span>
+                Skills
               </a>
             </li>
             <li class="side-nav__item">
-              <a class="side-nav__link" href="#section--projects"
-                ><svg class="side-nav__icon">
+              <a
+                aria-label="See Jhon's latests projects"
+                class="side-nav__link"
+                href="#section--projects"
+                ><svg aria-hidden="true" class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-windows"></use>
                 </svg>
-                <span>Projects</span></a
+                Projects</a
               >
             </li>
             <li class="side-nav__item">
               <a
+                aria-label="Contact Jhon with a job offer"
                 class="side-nav__link side-nav__link--btn"
                 href="#section--contact"
-                ><svg class="side-nav__icon">
+                ><svg aria-hidden="true" class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
                 </svg>
-                <span>Contact</span>
+                Contact
               </a>
             </li>
           </ul>
@@ -126,7 +141,7 @@
         </div>
       </header>
 
-      <main>
+      <main role="main">
         <section class="section about" id="section--about">
           <div class="about__text-box u-margin-bottom-big">
             <h2
@@ -135,9 +150,9 @@
               About Me
             </h2>
 
-            <span class="about__quote">
+            <blockquote class="about__quote">
               "Failure is not the opposite of success, it is part of success."
-            </span>
+            </blockquote>
 
             <p class="about__paragraph u-margin-bottom-small">
               I am a front-end web developer based in the United States with a
@@ -165,30 +180,38 @@
             <ul class="about__links u-margin-bottom-big">
               <li class="about__item">
                 <a
+                  aria-label="Visit Jhon Asay's GitHub profile"
                   class="about__link"
                   target="_blank"
                   href="https://github.com/jhon-asay"
-                  ><ion-icon class="about__icon" name="logo-github"></ion-icon>
+                  ><ion-icon
+                    class="about__icon"
+                    name="logo-github"
+                    alt="GitHub Profile"
+                  ></ion-icon>
                 </a>
               </li>
               <li class="about__item">
                 <a
+                  aria-label="Visit Jhon Asay's LinkedIn profile"
                   class="about__link"
                   target="_blank"
                   href="https://www.linkedin.com/in/jhon-asay/"
                   ><ion-icon
                     class="about__icon"
                     name="logo-linkedin"
+                    alt="LinkedIn Profile"
                   ></ion-icon>
                 </a>
               </li>
               <a
+                aria-label="Download Jhon Asay's resume"
                 class="btn btn--black d-flex"
                 target="_blank"
                 href="https://drive.google.com/file/d/1v7qLEQIDBiM2KGU-NLAbalM9FBPg_D9t/view?usp=sharing"
               >
-                Resume
-                <svg class="about__btn-icon">
+                Download Resume
+                <svg aria-hidden="true" class="about__btn-icon">
                   <use xlink:href="img/sprite.svg#icon-download"></use>
                 </svg>
               </a>
@@ -202,101 +225,122 @@
               </h2>
               <div class="faq__row">
                 <div class="faq__container">
-                  <ion-icon class="faq__icon" name="bar-chart-sharp"></ion-icon>
+                  <ion-icon
+                    aria-hidden="true"
+                    class="faq__icon"
+                    name="bar-chart-sharp"
+                  ></ion-icon>
                   <div class="faq__question">
-                    <span class="heading-tertiary">Active Learner</span>
+                    <h3 class="heading-tertiary--black">Active Learner</h3>
                   </div>
                   <div class="faq__answer">
-                    <span
-                      >As a proactive learner, I stay up-to-date with industry
+                    <p>
+                      As a proactive learner, I stay up-to-date with industry
                       trends and best practices by seeking out the latest
                       technologies and frameworks. Through ongoing education, I
                       continuously expand my knowledge and skills to anticipate
                       clients' evolving needs and deliver high-quality products.
-                    </span>
+                    </p>
                   </div>
                 </div>
 
                 <div class="faq__container">
                   <ion-icon
+                    aria-hidden="true"
                     class="faq__icon"
                     name="extension-puzzle-sharp"
                   ></ion-icon>
                   <div class="faq__question">
-                    <span class="heading-tertiary">Problem Solver</span>
+                    <h3 class="heading-tertiary--black">Problem Solver</h3>
                   </div>
                   <div class="faq__answer">
-                    <span
-                      >My problem-solving approach involves breaking down
-                      complex issues into manageable steps, visualizing the
-                      problem, and evaluating the best method to tackle each
-                      inquiry. This leads to effective and creative solutions
-                      that meet project and client needs.
-                    </span>
+                    <p>
+                      My problem-solving approach involves breaking down complex
+                      issues into manageable steps, visualizing the problem, and
+                      evaluating the best method to tackle each inquiry. This
+                      leads to effective and creative solutions that meet
+                      project and client needs.
+                    </p>
                   </div>
                 </div>
 
                 <div class="faq__container">
-                  <ion-icon class="faq__icon" name="ribbon-sharp"></ion-icon>
+                  <ion-icon
+                    aria-hidden="true"
+                    class="faq__icon"
+                    name="ribbon-sharp"
+                  ></ion-icon>
                   <div class="faq__question">
-                    <span class="heading-tertiary">Best Practice</span>
+                    <h3 class="heading-tertiary--black">Best Practice</h3>
                   </div>
                   <div class="faq__answer">
-                    <span
-                      >I prioritize maintenance and scalability in my
-                      programming projects by implementing best practices,
-                      creating clean and maintainable code that meets high
-                      standards of quality and functionality.
-                    </span>
+                    <p>
+                      I prioritize maintenance and scalability in my programming
+                      projects by implementing best practices, creating clean
+                      and maintainable code that meets high standards of quality
+                      and functionality.
+                    </p>
                   </div>
                 </div>
 
                 <div class="faq__container">
-                  <ion-icon class="faq__icon" name="terminal-sharp"></ion-icon>
+                  <ion-icon
+                    aria-hidden="true"
+                    class="faq__icon"
+                    name="terminal-sharp"
+                  ></ion-icon>
                   <div class="faq__question">
-                    <span class="heading-tertiary">Work Environment</span>
+                    <h3 class="heading-tertiary--black">Work Environment</h3>
                   </div>
                   <div class="faq__answer">
-                    <span
-                      >I excel in both collaborative and self-managing
+                    <p>
+                      I excel in both collaborative and self-managing
                       environments and bring a diverse skill set to any project
                       or team. I'm confident in my ability to foster positive
                       relationships with colleagues and bring value to any
                       workplace.
-                    </span>
+                    </p>
                   </div>
                 </div>
 
                 <div class="faq__container">
-                  <ion-icon class="faq__icon" name="sparkles-sharp"></ion-icon>
+                  <ion-icon
+                    aria-hidden="true"
+                    class="faq__icon"
+                    name="sparkles-sharp"
+                  ></ion-icon>
                   <div class="faq__question">
-                    <span class="heading-tertiary">Mindset</span>
+                    <h3 class="heading-tertiary--black">Mindset</h3>
                   </div>
                   <div class="faq__answer">
-                    <span
-                      >Despite experiencing impostor syndrome, I'm proud of my
+                    <p>
+                      Despite experiencing impostor syndrome, I'm proud of my
                       achievements and remain committed to producing
                       high-quality work and contributing to my team's success.
                       I'm excited to continue learning and growing from my work
                       and colleagues.
-                    </span>
+                    </p>
                   </div>
                 </div>
 
                 <div class="faq__container">
-                  <ion-icon class="faq__icon" name="toggle-sharp"></ion-icon>
+                  <ion-icon
+                    aria-hidden="true"
+                    class="faq__icon"
+                    name="toggle-sharp"
+                  ></ion-icon>
                   <div class="faq__question">
-                    <span class="heading-tertiary">Adaptable</span>
+                    <h3 class="heading-tertiary--black">Adaptable</h3>
                   </div>
                   <div class="faq__answer">
-                    <span
-                      >I approach learning new technologies and frameworks with
+                    <p>
+                      I approach learning new technologies and frameworks with
                       enthusiasm and embrace challenges outside of my comfort
                       zone. I strive for personal and professional growth and
                       enjoy exploring new opportunities. Additionally, I am
                       adept at adapting my skill set to meet the current needs
                       of the company.
-                    </span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -312,43 +356,61 @@
 
             <div class="skills__grid">
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-html5"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-html5"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">HTML</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-css3"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-css3"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">CSS</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-javascript"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-javascript"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">JavaScript</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-react"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-react"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">React</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-redux"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-redux"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Redux</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-sass"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-sass"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Sass</span>
               </div>
@@ -360,43 +422,61 @@
 
             <div class="skills__grid">
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-git"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-git"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Git</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-github"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-github"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Github</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-visualstudiocode"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-visualstudiocode"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">VSCode</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-firebase"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-firebase"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Firebase</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-netlify"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-netlify"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Netlify</span>
               </div>
 
               <div class="skills__card">
-                <svg class="skills__card-icon">
-                  <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+                <svg aria-hidden="true" class="skills__card-icon">
+                  <use
+                    aria-hidden="true"
+                    xlink:href="img/sprite.svg#icon-bootstrap"
+                  ></use>
                 </svg>
                 <span class="skills__card-text">Bootstrap</span>
               </div>
@@ -441,13 +521,19 @@
                     />
                   </div>
 
-                  <button>
-                    <svg class="slider__btn slider__btn--left">
+                  <button aria-label="Previous slide button" type="button">
+                    <svg
+                      aria-hidden="true"
+                      class="slider__btn slider__btn--left"
+                    >
                       <use xlink:href="img/sprite.svg#icon-circle-left"></use>
                     </svg>
                   </button>
-                  <button>
-                    <svg class="slider__btn slider__btn--right">
+                  <button aria-label="Next slide button" type="button">
+                    <svg
+                      aria-hidden="true"
+                      class="slider__btn slider__btn--right"
+                    >
                       <use xlink:href="img/sprite.svg#icon-circle-right"></use>
                     </svg>
                   </button>
@@ -469,70 +555,85 @@
                   </p>
                   <ul class="project__bullets">
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Navigate through the store</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Navigate through the store
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Add items to the cart</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Add items to the cart
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Edit your items in checkout</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Edit your items in checkout
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Login with demo account:</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Login with demo account:
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right hidden"
-                        ></use>
-                      </svg>
-                      <span>mike@gmail.com / 12341234</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right hidden"
+                          ></use>
+                        </svg>
+                        mike@gmail.com / 12341234
+                      </span>
                     </li>
                   </ul>
                 </blockquote>
 
-                <div class="project__tech-stack">
+                <div
+                  aria-label="Technologies used in this project"
+                  class="project__tech-stack"
+                >
                   <span class="project__tech">React</span>
                   <span class="project__tech">Firebase</span>
                 </div>
 
                 <div class="project__links">
                   <a
+                    aria-label="Visit the Crwn Clothing Github repository"
                     class="project__link project__link--btn"
                     target="_blank"
                     href="https://github.com/jhon-asay/crwn-clothing"
                   >
-                    <span>Github</span>
-                    <svg class="project__icon">
+                    Github
+                    <svg aria-hidden="true" class="project__icon">
                       <use xlink:href="img/sprite.svg#icon-github"></use>
                     </svg>
                   </a>
                   <a
+                    aria-label="Visit the Crwn Clothing website"
                     class="project__link project__link--btn"
                     target="_blank"
                     href="https://ja-crwn-clothing-project.netlify.app/"
-                    ><span>Site</span>
-                    <svg class="project__icon">
+                    >Site
+                    <svg aria-hidden="true" class="project__icon">
                       <use xlink:href="img/sprite.svg#icon-external-link"></use>
                     </svg>
                   </a>
@@ -571,13 +672,19 @@
                     />
                   </div>
 
-                  <button>
-                    <svg class="slider__btn slider__btn--left">
+                  <button aria-label="Previous slide button" type="button">
+                    <svg
+                      aria-hidden="true"
+                      class="slider__btn slider__btn--left"
+                    >
                       <use xlink:href="img/sprite.svg#icon-circle-left"></use>
                     </svg>
                   </button>
-                  <button>
-                    <svg class="slider__btn slider__btn--right">
+                  <button aria-label="Next slide button" type="button">
+                    <svg
+                      aria-hidden="true"
+                      class="slider__btn slider__btn--right"
+                    >
                       <use xlink:href="img/sprite.svg#icon-circle-right"></use>
                     </svg>
                   </button>
@@ -598,60 +705,73 @@
                   </p>
                   <ul class="project__bullets">
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Choose monthly or yearly billing</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Choose monthly or yearly billing
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Include addons to your plan</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Include addons to your plan
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>See a summary of your choices</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        See a summary of your choices
+                      </span>
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Dual design for mobile and desktop</span>
+                      <span>
+                        <svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Dual design for mobile and desktop
+                      </span>
                     </li>
                   </ul>
                 </blockquote>
-                <div class="project__tech-stack">
+                <div
+                  aria-label="Technologies used in this project"
+                  class="project__tech-stack"
+                >
                   <span class="project__tech">HTML</span>
                   <span class="project__tech">Sass</span>
                   <span class="project__tech">JavaScript</span>
                 </div>
                 <div class="project__links">
                   <a
+                    aria-label="Visit the Multi-Step Form Github repository"
                     class="project__link project__link--btn"
                     target="_blank"
                     href="https://github.com/jhon-asay/multi-step-form"
-                    ><span>Github</span>
-                    <svg class="project__icon">
+                    >Github
+                    <svg aria-hidden="true" class="project__icon">
                       <use xlink:href="img/sprite.svg#icon-github"></use>
                     </svg>
                   </a>
                   <a
+                    aria-label="Visit the Multi-Step Form website"
                     class="project__link project__link--btn"
                     target="_blank"
                     href="https://ja-multi-step-form.netlify.app/"
-                    ><span>Site</span>
-                    <svg class="project__icon">
+                    >Site
+                    <svg aria-hidden="true" class="project__icon">
                       <use xlink:href="img/sprite.svg#icon-external-link"></use>
                     </svg>
                   </a>
@@ -704,13 +824,19 @@
                     />
                   </div>
 
-                  <button>
-                    <svg class="slider__btn slider__btn--left">
+                  <button aria-label="Previous slide button" type="button">
+                    <svg
+                      aria-hidden="true"
+                      class="slider__btn slider__btn--left"
+                    >
                       <use xlink:href="img/sprite.svg#icon-circle-left"></use>
                     </svg>
                   </button>
-                  <button>
-                    <svg class="slider__btn slider__btn--right">
+                  <button aria-label="Next slide button" type="button">
+                    <svg
+                      aria-hidden="true"
+                      class="slider__btn slider__btn--right"
+                    >
                       <use xlink:href="img/sprite.svg#icon-circle-right"></use>
                     </svg>
                   </button>
@@ -730,59 +856,72 @@
                   </p>
                   <ul class="project__bullets">
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Create a new budget</span>
+                      <span
+                        ><svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Create a new budget</span
+                      >
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Bar changes at 50% and 75%</span>
+                      <span
+                        ><svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Bar changes at 50% and 75%</span
+                      >
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Card turns red when over budget</span>
+                      <span
+                        ><svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Card turns red when over budget</span
+                      >
                     </li>
                     <li class="project__bullet">
-                      <svg class="project__bullet-icon">
-                        <use
-                          xlink:href="img/sprite.svg#icon-chevron-right"
-                        ></use>
-                      </svg>
-                      <span>Delete expenses or budgets</span>
+                      <span
+                        ><svg aria-hidden="true" class="project__bullet-icon">
+                          <use
+                            xlink:href="img/sprite.svg#icon-chevron-right"
+                          ></use>
+                        </svg>
+                        Delete expenses or budgets</span
+                      >
                     </li>
                   </ul>
                 </blockquote>
-                <div class="project__tech-stack">
+                <div
+                  aria-label="Technologies used in this project"
+                  class="project__tech-stack"
+                >
                   <span class="project__tech">React</span>
                   <span class="project__tech">Boostrap</span>
                 </div>
                 <div class="project__links">
                   <a
+                    aria-label="Visit the Penny Saver Github repository"
                     class="project__link project__link--btn"
                     target="_blank"
                     href="https://github.com/jhon-asay/penny-saver"
-                    ><span>Github</span>
-                    <svg class="project__icon">
+                    >Github
+                    <svg aria-hidden="true" class="project__icon">
                       <use xlink:href="img/sprite.svg#icon-github"></use>
                     </svg>
                   </a>
                   <a
+                    aria-label="Visit the Penny Saver website"
                     class="project__link project__link--btn"
                     target="_blank"
                     href="https://ja-penny-saver-app.netlify.app/"
-                    ><span>Site</span>
-                    <svg class="project__icon">
+                    >Site
+                    <svg aria-hidden="true" class="project__icon">
                       <use xlink:href="img/sprite.svg#icon-external-link"></use>
                     </svg>
                   </a>
@@ -821,6 +960,7 @@
               <input class="spam-filter" name="spam-filter" />
               <div class="form__group">
                 <input
+                  aria-required="true"
                   class="form__input"
                   pattern="[A-Za-z ]{4,}"
                   type="text"
@@ -836,6 +976,7 @@
 
               <div class="form__group">
                 <input
+                  aria-required="true"
                   class="form__input"
                   pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[A-Za-z]{2,6}"
                   type="email"
@@ -851,6 +992,7 @@
 
               <div class="form__group">
                 <textarea
+                  aria-required="true"
                   class="form__input"
                   type="text"
                   placeholder="Message"
@@ -865,11 +1007,17 @@
               </div>
 
               <div class="form__group">
-                <button class="btn btn--orange form__btn d-flex">
-                  <span>Send</span>
-                  <svg class="form__icon">
-                    <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
-                  </svg>
+                <button
+                  aria-label="Submit contact form information"
+                  type="submit"
+                  class="btn btn--orange form__btn d-flex"
+                >
+                  <span>
+                    Send
+                    <svg aria-hidden="true" class="form__icon">
+                      <use xlink:href="img/sprite.svg#icon-paper-plane"></use>
+                    </svg>
+                  </span>
                 </button>
               </div>
             </form>

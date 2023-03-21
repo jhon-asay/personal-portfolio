@@ -55,6 +55,10 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--color-white);
+
+  &--black {
+    color: var(--color-grey-dark-2);
+  }
 }
 
 .paragraph {
