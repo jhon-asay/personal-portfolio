@@ -320,7 +320,10 @@ body {
 .form__input:focus:invalid {
   border-bottom: 3.5px solid var(--color-primary-dark);
 }
-.form__input::-webkit-input-placeholder {
+.form__input::-moz-placeholder {
+  color: transparent;
+}
+.form__input::placeholder {
   color: transparent;
 }
 .form__label {
@@ -362,6 +365,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .side-nav {
@@ -954,7 +958,8 @@ body {
     width: 4rem;
   }
   .btn, .btn:link, .btn:visited {
-    padding: 1.1rem 3rem;
+    padding: 1rem 1.75rem;
+    font-size: 1.5rem;
   }
   .u-margin-bottom-small {
     margin-bottom: 2rem;

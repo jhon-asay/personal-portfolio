@@ -5,7 +5,6 @@
 ////////////////////////////////
 
 const sideNav = document.querySelector('.side-nav');
-
 const burgerBtn = document.querySelector('.sidebar__burger-btn');
 const sideNavList = document.querySelector('.side-nav__list');
 
@@ -58,14 +57,6 @@ const runOnMobile = (scrollFunction) => {
 
 runOnMobile(mobileScroll);
 
-// window.addEventListener('resize', () => {
-//   if (window.matchMedia('(max-width: 500px)').matches) {
-//     runOnMobile(mobileScroll);
-//   } else {
-//     return;
-//   }
-// });
-
 ////////////////////////////////
 ///          SLIDER          ///
 ////////////////////////////////
@@ -73,7 +64,7 @@ runOnMobile(mobileScroll);
 const slideContainer = document.querySelectorAll('.slider');
 
 for (let i = 0; i < slideContainer.length; i++) {
-  const slider = function () {
+  const slider = () => {
     const slides = slideContainer[i].querySelectorAll('.slider__slide');
     const btnLeft = slideContainer[i].querySelector('.slider__btn--left');
     const btnRight = slideContainer[i].querySelector('.slider__btn--right');
@@ -82,8 +73,8 @@ for (let i = 0; i < slideContainer.length; i++) {
     let currentSlide = 0;
     const maxSlide = slides.length;
 
-    const createDots = function () {
-      slides.forEach(function (_, i) {
+    const createDots = () => {
+      slides.forEach((_, i) => {
         dotContainer.insertAdjacentHTML(
           'beforeend',
           `<button class="slider__dot" data-slide="${i}"></button>`
@@ -91,7 +82,7 @@ for (let i = 0; i < slideContainer.length; i++) {
       });
     };
 
-    const activateDot = function (slide) {
+    const activateDot = (slide) => {
       slideContainer[i]
         .querySelectorAll('.slider__dot')
         .forEach((dot) => dot.classList.remove('slider__dot--active'));
@@ -101,7 +92,7 @@ for (let i = 0; i < slideContainer.length; i++) {
         .classList.add('slider__dot--active');
     };
 
-    const goToSlide = function (value) {
+    const goToSlide = (value) => {
       slides.forEach(
         (slide, index) =>
           (slide.style.transform = `translateX(${100 * (index - value)}%)`)
@@ -109,7 +100,7 @@ for (let i = 0; i < slideContainer.length; i++) {
     };
     goToSlide(0);
 
-    const nextSlide = function () {
+    const nextSlide = () => {
       if (currentSlide === maxSlide - 1) {
         currentSlide = 0;
       } else {
@@ -120,7 +111,7 @@ for (let i = 0; i < slideContainer.length; i++) {
       activateDot(currentSlide);
     };
 
-    const previousSlide = function () {
+    const previousSlide = () => {
       if (currentSlide === 0) {
         currentSlide = maxSlide - 1;
       } else {
@@ -131,7 +122,7 @@ for (let i = 0; i < slideContainer.length; i++) {
       activateDot(currentSlide);
     };
 
-    const init = function () {
+    const init = () => {
       goToSlide(0);
       createDots();
 
@@ -143,7 +134,7 @@ for (let i = 0; i < slideContainer.length; i++) {
     btnRight.addEventListener('click', nextSlide);
     btnLeft.addEventListener('click', previousSlide);
 
-    dotContainer.addEventListener('click', function (event) {
+    dotContainer.addEventListener('click', (event) => {
       if (event.target.classList.contains('slider__dot')) {
         const { slide } = event.target.dataset;
         goToSlide(slide);

@@ -29,6 +29,10 @@
     &::-webkit-input-placeholder {
       color: transparent;
     }
+
+    &::placeholder {
+      color: transparent;
+    }
   }
 
   &__label {
@@ -78,5 +82,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
