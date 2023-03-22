@@ -14,8 +14,16 @@ const toggleButtonAndNav = () => {
   sideNav.classList.toggle('open');
 };
 
+const toggleExpanded = () => {
+  const isExpanded = sideNavList.getAttribute('aria-expanded') === 'true';
+  sideNav.setAttribute('aria-expanded', !isExpanded);
+};
+
 const openNav = () => {
-  burgerBtn.addEventListener('click', toggleButtonAndNav);
+  burgerBtn.addEventListener('click', () => {
+    toggleButtonAndNav();
+    toggleExpanded();
+  });
   sideNavList.addEventListener('click', toggleButtonAndNav);
 };
 

@@ -43,17 +43,21 @@
 
   <body>
     <div class="container">
-      <div class="sidebar">
+      <nav role="navigation" class="sidebar">
         <a href="#section--header" class="sidebar__mobile-logo"
           ><img
             class="sidebar__mobile-logo"
             src="img/logo-png.png"
-            alt="Jhon Asay's logo"
+            alt="Jhon Asay's portfolio logo"
         /></a>
-        <div class="sidebar__burger-btn">
+        <button
+          aria-label="Mobile navigation open and close button"
+          type="menu"
+          class="sidebar__burger-btn"
+        >
           <div class="sidebar__burger"></div>
-        </div>
-        <nav role="navigation" class="side-nav">
+        </button>
+        <div aria-expanded="false" class="side-nav">
           <ul class="side-nav__list">
             <li class="side-nav__item">
               <a
@@ -119,8 +123,8 @@
               src="img/logo-png.png"
               alt="Jhon Asay's logo"
           /></a>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <header class="section header" id="section--header">
         <div class="header__container">

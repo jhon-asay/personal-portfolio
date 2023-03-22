@@ -21,6 +21,10 @@
     height: 4rem;
     cursor: pointer;
     margin: 0 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
 
     transition: all 0.5s ease-in-out;
   }
@@ -33,20 +37,21 @@
     height: 0.3rem;
     background-color: var(--color-primary);
     transition: all 0.5s ease-in-out;
+    position: absolute;
+    transform-origin: center;
   }
 
   &__burger::before,
   &__burger::after {
     content: '';
-    position: absolute;
   }
 
   &__burger::before {
-    transform: translateY(-1rem);
+    transform: translate(-50%, -1rem);
   }
 
   &__burger::after {
-    transform: translateY(1rem);
+    transform: translate(-50%, 1rem);
   }
 
   &__burger-btn {
@@ -55,11 +60,11 @@
     }
 
     &.open .sidebar__burger::before {
-      transform: rotate(45deg);
+      transform: translate(-50%, 0) rotate(45deg);
     }
 
     &.open .sidebar__burger::after {
-      transform: rotate(-45deg);
+      transform: translate(-50%, 0) rotate(-45deg);
     }
   }
 }

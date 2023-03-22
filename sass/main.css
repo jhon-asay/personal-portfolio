@@ -127,6 +127,9 @@ body {
   text-transform: uppercase;
   color: var(--color-white);
 }
+.heading-tertiary--black {
+  color: var(--color-grey-dark-2);
+}
 
 .paragraph {
   font-size: var(--font-default);
@@ -733,6 +736,10 @@ body {
   height: 4rem;
   cursor: pointer;
   margin: 0 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  position: relative;
   transition: all 0.5s ease-in-out;
 }
 .sidebar__burger, .sidebar__burger::before, .sidebar__burger::after {
@@ -741,25 +748,26 @@ body {
   height: 0.3rem;
   background-color: var(--color-primary);
   transition: all 0.5s ease-in-out;
+  position: absolute;
+  transform-origin: center;
 }
 .sidebar__burger::before, .sidebar__burger::after {
   content: "";
-  position: absolute;
 }
 .sidebar__burger::before {
-  transform: translateY(-1rem);
+  transform: translate(-50%, -1rem);
 }
 .sidebar__burger::after {
-  transform: translateY(1rem);
+  transform: translate(-50%, 1rem);
 }
 .sidebar__burger-btn.open .sidebar__burger {
   background-color: transparent;
 }
 .sidebar__burger-btn.open .sidebar__burger::before {
-  transform: rotate(45deg);
+  transform: translate(-50%, 0) rotate(45deg);
 }
 .sidebar__burger-btn.open .sidebar__burger::after {
-  transform: rotate(-45deg);
+  transform: translate(-50%, 0) rotate(-45deg);
 }
 
 .skills {
@@ -815,12 +823,12 @@ body {
     display: none;
     position: absolute;
     background-color: var(--color-grey-dark-2);
-    top: 1rem;
+    top: 6rem;
     left: 0;
     width: 100%;
     padding: 3rem;
-    z-index: -10;
     opacity: 0.9;
+    margin-top: 0;
     animation: showNav 0.5s ease-in-out forwards;
     transform-origin: top center;
   }
@@ -840,6 +848,9 @@ body {
   }
   .side-nav__item:not(:last-child) {
     margin-bottom: 1rem;
+  }
+  .side-nav__item::before {
+    display: none;
   }
   .side-nav__link:link, .side-nav__link:visited {
     font-size: 1.8rem;
